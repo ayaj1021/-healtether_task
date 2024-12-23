@@ -23,6 +23,10 @@ class AnimatedUserListTile extends StatelessWidget {
       transform: Matrix4.translationValues(animated ? 0 : width, 0, 0),
       child: ListTile(
         contentPadding: const EdgeInsets.symmetric(horizontal: 20),
+        leading: const CircleAvatar(
+          radius: 20,
+          backgroundImage: AssetImage('assets/images/user_image.png'),
+        ),
         title: Text(
           user.name,
           style: const TextStyle(
